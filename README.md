@@ -2,9 +2,13 @@
 Project made with Vue.js, Typescript, VueMaterial and GraphQl
 
 #Estrutura 
-public --> Chama os arquivos do Vue p/ pagina.
+    
+    
+    public --> Chama os arquivos do Vue p/ pagina.
 
-src --> Pastas e arquivos da aplicação.
+    src --> Pastas e arquivos da aplicação.
+    
+    
     assets -> Imagens que podem ser utilizados no projeto.
 
 
