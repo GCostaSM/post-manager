@@ -1,7 +1,7 @@
 # Post-Manager
 Project made with Vue.js, Typescript, VueMaterial and GraphQl
 
-#Estrutura 
+##Estrutura 
     
     
     public --> Chama os arquivos do Vue p/ pagina.
