@@ -7,28 +7,23 @@
           <md-button @click="postStep" class="md-primary md-raised">Criar um post</md-button>
         </md-empty-state>
 
-        <md-layout v-for="(template) in templateHtml" :key="template.html">
-            
-              <md-card  class="md-layout-item md-size-90">
-                <div class="pad">
-                  <div v-html="template.html"></div>
-                  <div>
-                      <md-switch v-model="template.reprovado" @change="()=>{ template= switchAprove(false,template);}">Reprovar</md-switch>
-                      <md-switch v-model="template.aprovado" @change="()=>{ template= switchAprove(true,template);}" class="md-primary">Aprovar</md-switch>
-                  </div>
-                </div>
-              </md-card>
-              
-        </md-layout>
+        <div v-for="(template) in templateHtml" :key="template.html">
+          <v-container  class="my-12">
+            <v-layout row>
+              <v-flex xs12 md10>
+                <div v-html="template.html"></div>
+              </v-flex>
+              <v-flex xs12 md2>
+                <md-switch xs12 md6 v-model="template.reprovado" @change="()=>{ template= switchAprove(false,template);}">Reprovar</md-switch>
+                <md-switch xs12 md6 v-model="template.aprovado" @change="()=>{ template= switchAprove(true,template);}" class="md-primary">Aprovar</md-switch>
+              </v-flex>
+            </v-layout>      
+          </v-container>
+        </div>
 
     </div>
 </template>
 <style lang="scss" scoped>
-  .md-switch {
-    display: flex;
-    margin-left:90%;
-    margin-right:15%;
-  }
   .pad{
     padding:10px;
   }
