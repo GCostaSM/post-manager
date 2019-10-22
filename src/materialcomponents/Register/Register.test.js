@@ -1,4 +1,3 @@
-import RegisterComponent from "./RegisterComponent.vue"
 
 describe('RegisterComponent.vue', ()=>{
     test('setup correctly',()=>{
