@@ -1,4 +1,5 @@
-import RootComponent from "../materialcomponents/Root/RootComponent.vue"
+//import RootComponent from "../materialcomponents/Root/RootComponent.vue"
+import RootDarkComponent from "../materialcomponents/Root/RootDarkComponent.vue"
 import PostsComponent from "../materialcomponents/Posts/PostsComponent.vue"
 import PostStepComponent from "../materialcomponents/Posts/PostStepComponent.vue"
 import LoginComponent from "../materialcomponents/Login/LoginComponent.vue"
@@ -11,7 +12,7 @@ const routes = [
 },
 {
     path:"/app",
-    component:RootComponent,
+    component:RootDarkComponent,
     children:[
         {
             path: "posts",

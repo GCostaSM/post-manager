@@ -1,4 +1,4 @@
-import  RootCmponent from "./materialcomponents/Root/RootCmponent.vue"
+import  RootDarkCmponent from "./materialcomponents/Root/RootDarkCmponent.vue"
 import  PostsComponent from "./materialcomponents/Posts/PostsComponent.vue"
 import  LoginComponent from "./materialcomponents/Login/LoginComponent.vue"
 import  PostStepComponent from "./materialcomponents/Posts/PostStepComponent.vue"

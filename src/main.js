@@ -6,6 +6,7 @@ Vue.config.productionTip = false
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import 'vue-material/dist/theme/default.css'
+import vuetify from './vuetify' // path to vuetify export
 
 Vue.config.productionTip = false
 
@@ -14,11 +15,11 @@ routes,
 linkExactActiveClass: "nav-item active"
 });
 
-
 Vue.use(VueRouter);
 Vue.use(VueMaterial);
 
 new Vue({
+  vuetify,
   render: h => h(App),
   components: { App },
   router
