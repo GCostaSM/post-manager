@@ -73,7 +73,7 @@
         this.menuVisible = !this.menuVisible
       },
       goPosts(){
-        this.$router.push( '/app/posts' );
+        this.$router.push( '/app/users' );
       },
       exitApp(){
         this.$router.push( '/' );

@@ -4,6 +4,7 @@ import PostsComponent from "../materialcomponents/Posts/PostsComponent.vue"
 import PostStepComponent from "../materialcomponents/Posts/PostStepComponent.vue"
 import LoginComponent from "../materialcomponents/Login/LoginComponent.vue"
 import  RegisterComponent from "../materialcomponents/Register/RegisterComponent.vue"
+import  UsersComponent from "../materialcomponents/Users/UsersComponent.vue"
 
 const routes = [
 {
@@ -28,6 +29,11 @@ const routes = [
             path: "register",
             name: "Register",
             component: RegisterComponent
+        },
+        {   
+            path:"users",
+            name:"Users",
+            component:UsersComponent
         }
     ]
 }
